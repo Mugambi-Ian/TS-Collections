@@ -10,5 +10,23 @@ npm i ts-collection-set
 yarn add ts-collection-set
 ```
 #### Usage
-Follow the instructions below.
+Import the collections library to your typescript file.
+```typescript
+import * as Collections from "ts-collection-set"
+```
 ### Dictionary 
+
+Initialize a dictionary instance as follow.
+```typescript
+const englishDictionary: Collections.Dictionary<string, string> = new Collections.Dictionary();
+```
+Add new elements to your dictionary instance as follows. The first parameter being the elements key and the second being its value.
+```typescript
+englishDictionary.setValue("A", "First english alphabet character.");
+englishDictionary.setValue("Grey", "A metallic shade of black");
+englishDictionary.setValue("Doctor", "An expert in a particular field of training");
+```
+Check if the dictionary contains a particular key as follows.
+```typescript
+englishDictionary.containsKey("key");
+```
