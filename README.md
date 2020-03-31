@@ -1,6 +1,6 @@
 # TS-Collections
 ### Installation
-Add this library using npm or yarn.
+Add this library using npm or yarn from your terminal.
 ###### NPM
 ```bash
 npm i ts-collection-set
