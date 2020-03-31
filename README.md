@@ -14,8 +14,8 @@ Import the collections library to your typescript file.
 ```typescript
 import * as Collections from "ts-collection-set"
 ```
-#### Dictionary 
-Initialize a dictionary instance as follow.
+#### Dictionary (HashMap) 
+Initialize a dictionary instance as follows.
 ```typescript
 const englishDictionary: Collections.Dictionary<string, string> = new Collections.Dictionary();
 ```
@@ -36,4 +36,25 @@ englishDictionary.remove("Key");
 Get an array of key elements as follows.
 ```typescript
 englishDictionary.keys();
+```
+#### Set (ArrayList)
+Initialize a set instance as follows.
+```typescript
+const numArray: Collections.Set<string> = new Collections.Set();
+```
+Add elements to your set instance as follows.
+```typescript
+numArray.add("1");
+numArray.add("2");
+numArray.add("3");
+numArray.add("4");
+```
+Remove an element from your set instance as follows.
+```typescript
+numArray.remove("2");
+```
+
+Check to see if is your set instance contains a particular element using the following method.
+```typescript
+numArray.contains("1");
 ```
