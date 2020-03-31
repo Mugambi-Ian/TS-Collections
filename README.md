@@ -1,5 +1,5 @@
 # TS-Collections
-#### Installation
+### Installation
 Add this library using npm or yarn.
 ###### NPM
 ```bash
@@ -9,12 +9,12 @@ npm i ts-collection-set
 ```bash
 yarn add ts-collection-set
 ```
-#### Usage
+### Usage
 Import the collections library to your typescript file.
 ```typescript
 import * as Collections from "ts-collection-set"
 ```
-### Dictionary 
+#### Dictionary 
 Initialize a dictionary instance as follow.
 ```typescript
 const englishDictionary: Collections.Dictionary<string, string> = new Collections.Dictionary();
