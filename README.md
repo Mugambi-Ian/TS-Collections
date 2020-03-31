@@ -15,7 +15,6 @@ Import the collections library to your typescript file.
 import * as Collections from "ts-collection-set"
 ```
 ### Dictionary 
-
 Initialize a dictionary instance as follow.
 ```typescript
 const englishDictionary: Collections.Dictionary<string, string> = new Collections.Dictionary();
@@ -26,7 +25,15 @@ englishDictionary.setValue("A", "First english alphabet character.");
 englishDictionary.setValue("Grey", "A metallic shade of black");
 englishDictionary.setValue("Doctor", "An expert in a particular field of training");
 ```
-Check if the dictionary contains a particular key as follows.
+Check if the dictionary contains a particular key using this method.
 ```typescript
 englishDictionary.containsKey("key");
+```
+Remove an element from the dictionary instance using its key as follows.
+```typescript
+englishDictionary.remove("Key");
+```
+Get an array of key elements as follows.
+```typescript
+englishDictionary.keys();
 ```
